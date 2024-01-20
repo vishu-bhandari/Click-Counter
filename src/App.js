@@ -3,6 +3,7 @@ import "./App.css";
 import PlusOneIcon from '@mui/icons-material/PlusOne';
 import DeleteIcon from '@mui/icons-material/Delete';
 import Button from '@mui/material/Button';
+import Tooltip from '@mui/material/Tooltip';
 
 const App = () => {
   const [num, setNum] = useState(0);
@@ -30,14 +31,19 @@ const App = () => {
         <div className="center_div">
           <h1>{num}</h1>
           <div className="btn_div">
+          <Tooltip title="Increment">
             <Button variant="outlined" className="increment_btn" onClick={incNum}>
             Increment
             <PlusOneIcon/> 
+
             </Button>
+            </Tooltip>
+            <Tooltip title="Decrement">
             <Button variant="outlined" className="decrement_btn" onClick={decNum}>
               Decrement
               <DeleteIcon/> 
             </Button>
+            </Tooltip>
           </div>
           <div id="alert" className="alert">
             Limit Reached
