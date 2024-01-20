@@ -56,12 +56,13 @@ h1 {
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.decrement_btn {
+ .decrement_btn {
   background-color: #f5858b;
 }
 
 .increment_btn:hover,
 .decrement_btn:hover {
   background-color: #428bca;
+  
   transform: scale(1.05);
 }
