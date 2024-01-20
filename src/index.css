@@ -1,5 +1,3 @@
-/* App.css */
-
 body {
   margin: 0;
   padding: 0;
@@ -7,50 +5,63 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: linear-gradient(to right, #3498db, #6c5ce7); /* Linear gradient background */
+  background: linear-gradient(to right, #a7c5eb, #f3e1f7);
 }
 
 .main_div {
-  background: linear-gradient(to right, #ecf0f1, #dfe6e9); /* Linear gradient background */
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); /* Increase box shadow for a fancier look */
+  background: linear-gradient(to right, #f9f9f9, #e4e4e4);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
   border-radius: 15px;
-  padding: 30px; /* Increase padding for more space inside the main_div */
+  padding: 30px;
+}
+
+h1 {
+  font-size: 4em;
+  color: #2c3e50;
+  margin-bottom: 30px;
 }
 
 .center_div {
   text-align: center;
 }
 
-h1 {
-  font-size: 4em; /* Increase font size for the heading */
-  color: #2c3e50; /* Set a dark text color */
-  margin-bottom: 30px; /* Increase margin for more separation from buttons */
-}
-
 .btn_div {
   display: flex;
-  justify-content: space-between; /* Spread buttons apart */
+  justify-content: space-between;
+}
+
+.alert {
+  background-color: #e74c3c;
+  color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-size: 1.2em;
+  display: none;
 }
 
 .increment_btn,
 .decrement_btn {
-  background-color: #3498db; /* Update button color */
+  background-color: #5fa2db;
   color: #fff;
   border: none;
-  padding: 15px 30px; /* Increase padding for larger buttons */
-  margin-right: 15px; /* Add margin to create space between buttons */
-  font-size: 1.2em; /* Increase font size for buttons */
+  padding: 15px 30px;
+  margin-right: 15px;
+  font-size: 1.2em;
   cursor: pointer;
   border-radius: 8px;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .decrement_btn {
-  background-color: #e74c3c; /* Set a red color for the decrement button */
+  background-color: #f5858b;
 }
 
 .increment_btn:hover,
 .decrement_btn:hover {
-  background-color: #2980b9; /* Darker blue for increment button on hover */
-  /* For decrement button, you can adjust the color on hover if needed */
+  background-color: #428bca;
+  transform: scale(1.05);
 }
