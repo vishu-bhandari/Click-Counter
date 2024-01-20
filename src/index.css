@@ -1,13 +1,56 @@
+/* App.css */
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to right, #3498db, #6c5ce7); /* Linear gradient background */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.main_div {
+  background: linear-gradient(to right, #ecf0f1, #dfe6e9); /* Linear gradient background */
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); /* Increase box shadow for a fancier look */
+  border-radius: 15px;
+  padding: 30px; /* Increase padding for more space inside the main_div */
+}
+
+.center_div {
+  text-align: center;
+}
+
+h1 {
+  font-size: 4em; /* Increase font size for the heading */
+  color: #2c3e50; /* Set a dark text color */
+  margin-bottom: 30px; /* Increase margin for more separation from buttons */
+}
+
+.btn_div {
+  display: flex;
+  justify-content: space-between; /* Spread buttons apart */
+}
+
+.increment_btn,
+.decrement_btn {
+  background-color: #3498db; /* Update button color */
+  color: #fff;
+  border: none;
+  padding: 15px 30px; /* Increase padding for larger buttons */
+  margin-right: 15px; /* Add margin to create space between buttons */
+  font-size: 1.2em; /* Increase font size for buttons */
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.decrement_btn {
+  background-color: #e74c3c; /* Set a red color for the decrement button */
+}
+
+.increment_btn:hover,
+.decrement_btn:hover {
+  background-color: #2980b9; /* Darker blue for increment button on hover */
+  /* For decrement button, you can adjust the color on hover if needed */
 }
